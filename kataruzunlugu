@@ -1,0 +1,13 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main()
+{
+    char katar[80];
+    cout<<"Bir katar giriniz : ";
+    cin>>katar;
+    cout<<endl<<"Girdiginiz katarin uzunlugu : "<<strlen(katar);
+    return 0;
+}
