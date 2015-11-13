@@ -17,14 +17,6 @@ public:
     toplama operator+(int m);
 };
 
-toplama toplama::operator+(int m)
-{
-    toplama gecici;
-    gecici.x=x+m;
-    gecici.y=y+m;
-    return gecici;
-}
-
 toplama::toplama(int a,int b)
 {
     x=a; y=b;
@@ -48,6 +40,13 @@ toplama toplama::operator=(toplama sayi)
     x=sayi.x;
     y=sayi.y;
     return *this;
+}
+toplama toplama::operator+(int m)
+{
+    toplama gecici;
+    gecici.x=x+m;
+    gecici.y=y+m;
+    return gecici;
 }
 int main()
 {
