@@ -17,7 +17,7 @@ class derived : public base
     int j;
 public:
     derived(int n) : base(n)//turetilmis sinifin yapicisini temel sinifin yapicisina aktardık
-    //boylelikle temel sinifa gelen argumanida temel sinifa yollamis oluyoruz
+    //boylelikle temel sinifa gelen argumanida temel sinifa arguman olarak yollamis oluyoruz
     {
         cout<<"turetilmis sinifin yapicisi cagirildi."<<endl;
         j=n;
